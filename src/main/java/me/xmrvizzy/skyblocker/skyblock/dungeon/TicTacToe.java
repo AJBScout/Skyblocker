@@ -119,7 +119,7 @@ public class TicTacToe {
         if(board[2]==(board[4])&&board[4]==board[6]&&board[2]!=null)return true;
         return false;
     }
-    public static void findPos(ItemFrameEntity frame){//use vec3d
+    public static void findPos(ItemFrameEntity frame){
         ClientWorld world = MinecraftClient.getInstance().world;
         center=frame.getPos();
         if(world.getBlockState(new BlockPos((int)frame.getPos().x, (int)frame.getPos().y-2, (int)frame.getPos().z)).getBlock().getTranslationKey().contains("butt")){
